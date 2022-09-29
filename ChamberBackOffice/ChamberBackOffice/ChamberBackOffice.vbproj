@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2B25D71-AB59-461F-A40D-D643E4C49E33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ChamberBackOffice.My.MyApplication</StartupObject>
+    <RootNamespace>ChamberBackOffice</RootNamespace>
+    <AssemblyName>ChamberBackOffice</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ChamberBackOffice.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ChamberBackOffice.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v13.2.UI, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.Extensions, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.Wizard, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySqlBackup">
+      <HintPath>My Project\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.1.BackOfficeHome.Designer.vb">
+      <DependentUpon>1.1.BackOfficeHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1.1.BackOfficeHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackOfficeModule.vb" />
+    <Compile Include="3.2.1.1EmployeeSearch.Designer.vb">
+      <DependentUpon>3.2.1.1EmployeeSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.2.1.1EmployeeSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.2.1.2EmployeeForm.Designer.vb">
+      <DependentUpon>3.2.1.2EmployeeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.2.1.2EmployeeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5.3.1Backup.Designer.vb">
+      <DependentUpon>5.3.1Backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5.3.1Backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.1.5.1Facility.Designer.vb">
+      <DependentUpon>3.1.5.1Facility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.1.5.1Facility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8.1ChangePasswordForm.Designer.vb">
+      <DependentUpon>8.1ChangePasswordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="8.1ChangePasswordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.3.1ChangeRoomStatus.Designer.vb">
+      <DependentUpon>2.3.1ChangeRoomStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.3.1ChangeRoomStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.4.1LostandFoundSearch.Designer.vb">
+      <DependentUpon>2.4.1LostandFoundSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.4.1LostandFoundSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5.1.1HotelProfile.Designer.vb">
+      <DependentUpon>5.1.1HotelProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5.1.1HotelProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5.2.1Config.Designer.vb">
+      <DependentUpon>5.2.1Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5.2.1Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5.2.3BankAccount.Designer.vb">
+      <DependentUpon>5.2.3BankAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5.2.3BankAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.3.1.1JobPosition.Designer.vb">
+      <DependentUpon>3.3.1.1JobPosition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.3.1.1JobPosition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.4.3FoundTag.Designer.vb">
+      <DependentUpon>2.4.3FoundTag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.4.3FoundTag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.1.4.2InRoomFacility.Designer.vb">
+      <DependentUpon>3.1.4.2InRoomFacility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.1.4.2InRoomFacility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.1.4.1InRoomFacilitySearch.Designer.vb">
+      <DependentUpon>3.1.4.1InRoomFacilitySearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.1.4.1InRoomFacilitySearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeRoomStatusForm.Designer.vb">
+      <DependentUpon>ChangeRoomStatusForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeRoomStatusForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coba2combobox.Designer.vb">
+      <DependentUpon>coba2combobox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="coba2combobox.vb" />
+    <Compile Include="9.1ImportRoom.Designer.vb">
+      <DependentUpon>9.1ImportRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="9.1ImportRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.4.4ComplimentsandAmenities.Designer.vb">
+      <DependentUpon>2.4.4ComplimentsandAmenities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.4.4ComplimentsandAmenities.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LostandFoundForm.Designer.vb">
+      <DependentUpon>LostandFoundForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LostandFoundForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.4.2LostTag.Designer.vb">
+      <DependentUpon>2.4.2LostTag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.4.2LostTag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.1.4.3Multi Add.Designer.vb">
+      <DependentUpon>3.1.4.3Multi Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.1.4.3Multi Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="3.1.1.1RoomSearch.Designer.vb">
+      <DependentUpon>3.1.1.1RoomSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.1.1.1RoomSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.1.1.2RoomForm.Designer.vb">
+      <DependentUpon>3.1.1.2RoomForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.1.1.2RoomForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.1.2.1RoomTypeSearch.Designer.vb">
+      <DependentUpon>3.1.2.1RoomTypeSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.1.2.1RoomTypeSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.1.2.2RoomTypeForm.Designer.vb">
+      <DependentUpon>3.1.2.2RoomTypeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.1.2.2RoomTypeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5.2.2PaymentMethod.Designer.vb">
+      <DependentUpon>5.2.2PaymentMethod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5.2.2PaymentMethod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentDetail.Designer.vb">
+      <DependentUpon>PaymentDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RateSetting.Designer.vb">
+      <DependentUpon>RateSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RateSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomPlanSearch.Designer.vb">
+      <DependentUpon>RoomPlanSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RoomPlanSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.1.3.1Rate.Designer.vb">
+      <DependentUpon>3.1.3.1Rate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.1.3.1Rate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5.1.2Sex.Designer.vb">
+      <DependentUpon>5.1.2Sex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5.1.2Sex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5.1.3Salutation.Designer.vb">
+      <DependentUpon>5.1.3Salutation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5.1.3Salutation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.2.2.1UserSearch.Designer.vb">
+      <DependentUpon>3.2.2.1UserSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.2.2.1UserSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.2.2.2UserForm.Designer.vb">
+      <DependentUpon>3.2.2.2UserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3.2.2.2UserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7NightAudit.Designer.vb">
+      <DependentUpon>7NightAudit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="7NightAudit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5.3.2Restore.Designer.vb">
+      <DependentUpon>5.3.2Restore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5.3.2Restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification.Designer.vb">
+      <DependentUpon>Specification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Specification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.3.1RoomList.Designer.vb">
+      <DependentUpon>2.3.1RoomList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.3.1RoomList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.1.1RoomStatus.Designer.vb">
+      <DependentUpon>2.1.1RoomStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.1.1RoomStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.2.1RoomInspectionList.Designer.vb">
+      <DependentUpon>2.2.1RoomInspectionList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.2.1RoomInspectionList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8.2UsernamePassword.Designer.vb">
+      <DependentUpon>8.2UsernamePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="8.2UsernamePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1.1.BackOfficeHome.resx">
+      <DependentUpon>1.1.BackOfficeHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.3.1ChangeRoomStatus.resx">
+      <DependentUpon>2.3.1ChangeRoomStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.3.1RoomList.resx">
+      <DependentUpon>2.3.1RoomList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.4.3FoundTag.resx">
+      <DependentUpon>2.4.3FoundTag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.1.4.2InRoomFacility.resx">
+      <DependentUpon>3.1.4.2InRoomFacility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.1.4.1InRoomFacilitySearch.resx">
+      <DependentUpon>3.1.4.1InRoomFacilitySearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="9.1ImportRoom.resx">
+      <DependentUpon>9.1ImportRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coba2combobox.resx">
+      <DependentUpon>coba2combobox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.4.4ComplimentsandAmenities.resx">
+      <DependentUpon>2.4.4ComplimentsandAmenities.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LostandFoundForm.resx">
+      <DependentUpon>LostandFoundForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.2.1.1EmployeeSearch.resx">
+      <DependentUpon>3.2.1.1EmployeeSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.2.1.2EmployeeForm.resx">
+      <DependentUpon>3.2.1.2EmployeeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.2.1Config.resx">
+      <DependentUpon>5.2.1Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8.1ChangePasswordForm.resx">
+      <DependentUpon>8.1ChangePasswordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.3.1Backup.resx">
+      <DependentUpon>5.3.1Backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.1.5.1Facility.resx">
+      <DependentUpon>3.1.5.1Facility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.4.1LostandFoundSearch.resx">
+      <DependentUpon>2.4.1LostandFoundSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.1.1HotelProfile.resx">
+      <DependentUpon>5.1.1HotelProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.2.3BankAccount.resx">
+      <DependentUpon>5.2.3BankAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.3.1.1JobPosition.resx">
+      <DependentUpon>3.3.1.1JobPosition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.4.2LostTag.resx">
+      <DependentUpon>2.4.2LostTag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.1.4.3Multi Add.resx">
+      <DependentUpon>3.1.4.3Multi Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.1.1.1RoomSearch.resx">
+      <DependentUpon>3.1.1.1RoomSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.1.1.2RoomForm.resx">
+      <DependentUpon>3.1.1.2RoomForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.1.2.1RoomTypeSearch.resx">
+      <DependentUpon>3.1.2.1RoomTypeSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.1.2.2RoomTypeForm.resx">
+      <DependentUpon>3.1.2.2RoomTypeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.2.2PaymentMethod.resx">
+      <DependentUpon>5.2.2PaymentMethod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentDetail.resx">
+      <DependentUpon>PaymentDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RateSetting.resx">
+      <DependentUpon>RateSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomPlanSearch.resx">
+      <DependentUpon>RoomPlanSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.1.3.1Rate.resx">
+      <DependentUpon>3.1.3.1Rate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.1.2Sex.resx">
+      <DependentUpon>5.1.2Sex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.1.3Salutation.resx">
+      <DependentUpon>5.1.3Salutation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.2.2.1UserSearch.resx">
+      <DependentUpon>3.2.2.1UserSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.2.2.2UserForm.resx">
+      <DependentUpon>3.2.2.2UserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7NightAudit.resx">
+      <DependentUpon>7NightAudit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.3.2Restore.resx">
+      <DependentUpon>5.3.2Restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification.resx">
+      <DependentUpon>Specification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.1.1RoomStatus.resx">
+      <DependentUpon>2.1.1RoomStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.2.1RoomInspectionList.resx">
+      <DependentUpon>2.2.1RoomInspectionList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8.2UsernamePassword.resx">
+      <DependentUpon>8.2UsernamePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
