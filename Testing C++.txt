@@ -1,0 +1,188 @@
+void test (integer a, integer b)
+{
+    
+}
+
+int main()
+{
+    if(a==)
+    {
+        
+    }
+    else
+    {
+        
+    }
+    
+    while()
+    {
+        
+    }
+    
+    for(int i= 0)
+    
+    
+    
+    int a;
+    scanf("\f", &a)
+    printf("Angka saya adalah \d", 100)
+    << endl
+
+
+
+
+
+
+
+
+kotak tengah kosong
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int a=1;
+
+int main()
+{
+    while(a != 0)
+{
+
+
+    cout << "Masukan Angka : ";
+    scanf("%d",&a);
+    cout << endl;
+    if(a>3)
+    {
+        for(int i = 1;i <= a;i++)
+        {
+            for(int j = 1; j <= a;j++)
+            {
+               if(i==1 or i==a)
+                {
+                    printf("*");
+                }
+                else
+                {
+                    if (j == 1 or j == a)
+                    {
+                        printf("*");
+                    }
+                    else
+                    {
+                        printf(" ");
+                    }
+                }
+
+            }
+            cout << endl;
+        }
+    }
+    else if(a==0)
+    {
+        cout << "Exit" << endl;
+    }
+    else
+    {
+        cout << "Angka yang diinputkan harus lebih dari 3!!" << endl;
+    }
+    cout << endl;
+}
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bilangan Prima dan Fibbo
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int a=1;
+
+int main()
+{
+    while(a != 3)
+    {
+        cout << "Menu" << endl;
+        cout << "------------" << endl;
+        cout << "1. Bil. Prima" << endl;
+        cout << "2. Bil. Fibbo" << endl;
+        cout << "3. Exit" << endl;
+        cout << endl;
+        cout << "Pilihan : ";
+        scanf("%d",&a);
+        cout << endl;
+
+        if(a == 1)
+        {
+
+            int b;
+            cout << "Masukan Angka : ";
+            scanf("%d",&b);
+            int c = 0;
+            for(int i = 1; i <= b; i++)
+            {
+                int d = b % i;
+                if (d == 0)
+                {
+                    c += 1;
+                }
+            }
+            if(c == 2)
+            {
+                printf("Angka %d Adalah Bilangan Prima",b);
+            }
+            else
+            {
+                printf("Angka %d Adalah Bukan Bilangan Prima",b);
+            }
+            cout << endl;
+            cout << endl;
+        }
+        else if(a == 2)
+        {
+            int b;
+            cout << "Masukan Jumlah Biangan : ";
+            scanf("%d",&b);
+            cout << endl;
+            int d = 0;
+            int e = 1;
+            int f = 1;
+            for(int i = 1;i < b; i++)
+            {
+                if(i == 1)
+                {
+                    cout << "1";
+                }
+                f = d + e;
+                printf("%d",f);
+                d = e;
+                e = f;
+            }
+            cout << endl;
+            cout << endl;
+        }
+        else if(a== 3)
+        {
+            cout << "Exit" << endl;
+        }
+        else
+        {
+            cout << "Salah Pilihan !!!" << endl;
+        }
+    }
+    return 0;
+}
